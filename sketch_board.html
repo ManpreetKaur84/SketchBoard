@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Board</title>
+    <link rel="stylesheet" href="sketch_board.css">
+    <script src="sketch_board.js" defer></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="nav" id="navbar">
+        <div class="clr" data-clr="#000"></div>
+        <div class="clr" data-clr="red"></div>
+        <div class="clr" data-clr="orange"></div>
+        <div class="clr" data-clr="yellow"></div>
+        <div class="clr" data-clr="blue"></div>
+        <div class="clr" data-clr="green"></div>
+        <div class="clr" data-clr="pink"></div>
+        <div class="clr" data-clr="purple"></div>
+        <button type="button" class="save">Save</button>
+        <button type="button" class="clear">Clear</button>
+        <input type="color" value="#FFFFFF" id="favcolor"/>
+        <input type="range" value="5" min="1" max="10" name="ageInputName" id="ageInputId" oninput="ageOutputId.value=ageInputId.value" />
+        <output id="ageOutputId">5</output>
+        <div class="emoji">🎨</div>
+    </div>
+</body>
+</html> 
