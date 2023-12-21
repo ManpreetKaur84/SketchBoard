@@ -7,6 +7,7 @@ var lineW = 5;
 let prevX = null
 let prevY = null
 let draw = false
+let selectedShape=null
 
 body.style.backgroundColor = "#FFFFFF";
 var theInput = document.getElementById("favcolor");
@@ -25,7 +26,13 @@ document.getElementById("ageInputId").oninput = function() {
     document.getElementById("ageOutputId").innerHTML = lineW;
     ctx.lineWidth = lineW;
     console.log(ctx.lineWidth);
-};  
+}; 
+
+// let shapeBtn=document.querySelectorAll('.shape');
+// shapeBtn.addEventListener('click',()=>{
+//     selectedShape=shapeBtn.dataset.shapeBtn;
+
+// })
 
 let clrs = document.querySelectorAll(".clr")
 clrs = Array.from(clrs)
@@ -78,3 +85,10 @@ window.addEventListener('mousemove', (e) => {
         prevY = null;
     }
 });
+
+// window.addEventListener('mousemove',(e)=>{
+//         if(selectedShape=='line')
+//         {
+
+//         }
+// })
