@@ -9,7 +9,7 @@ let prevY = null
 let draw = false
 let selectedShape=null
 
-body.style.backgroundColor = "#FFFFFF";
+
 var theInput = document.getElementById("favcolor");
 
 theInput.addEventListener("input", function(){
